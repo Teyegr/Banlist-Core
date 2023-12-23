@@ -1,9 +1,9 @@
-package com.teyegr.banlist;
+package com.teyegr.banlist.core;
 
-import com.teyegr.banlist.exception.AccountAlreadyBannedException;
-import com.teyegr.banlist.exception.AccountNotBannedException;
-import com.teyegr.banlist.exception.AccountNotExistsException;
-import com.teyegr.banlist.exception.InvalidNameException;
+import com.teyegr.banlist.core.exception.AccountAlreadyBannedException;
+import com.teyegr.banlist.core.exception.AccountNotBannedException;
+import com.teyegr.banlist.core.exception.AccountNotExistsException;
+import com.teyegr.banlist.core.exception.InvalidNameException;
 
 public interface Banable {
     void ban(String name, String reason) throws AccountAlreadyBannedException, InvalidNameException, AccountNotExistsException;

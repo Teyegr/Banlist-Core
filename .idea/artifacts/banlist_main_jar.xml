@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="banlist.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/banlist_main_jar</output-path>
+    <root id="archive" name="banlist.main.jar">
+      <element id="module-output" name="banlist.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stelar7/R4J/2.4.0/a2ee95553ec471dd30d11ad7441c129c0f285a2c/R4J-2.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.neovisionaries/nv-websocket-client/2.14/1b66d37914b232cef45e56ec8c01907620de9e3a/nv-websocket-client-2.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.0-alpha7/30d326fc10810e7d6d948dfad32f6bb542487e8f/slf4j-api-2.0.0-alpha7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,4 +1,4 @@
-package com.teyegr.banlist;
+package com.teyegr.banlist.core;
 
 public class Account {
     String name;
