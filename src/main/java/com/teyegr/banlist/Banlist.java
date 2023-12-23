@@ -33,14 +33,6 @@ public class Banlist implements Banable {
         return gson.toJson(this);
     }
 
-    public String bansToString() {
-        return gson.toJson(bans);
-    }
-
-    public String banToString(Ban ban) {
-        return gson.toJson(ban);
-    }
-
     public static Banlist fromString(String data) {
         return gson.fromJson(data, Banlist.class);
     }
@@ -49,16 +41,8 @@ public class Banlist implements Banable {
         Persistence.writeFile(toString(), file);
     }
 
-    public void exportDefaultFile() {
-        Persistence.writeDefaultFile(toString());
-    }
-
     public static Banlist importFile(File file) {
         return Banlist.fromString(Persistence.readFile(file));
-    }
-
-    public static Banlist importDefaultFile() {
-        return Banlist.fromString(Persistence.readDefaultFile());
     }
 
     @Override
@@ -84,21 +68,18 @@ public class Banlist implements Banable {
         } catch (AccountNotBannedException ignored) {}
 
         bans.add(new Ban(account.toString(), riotAccount.getPUUID(), reason));
-        exportDefaultFile();
     }
 
     @Override
     public void unban(String name) throws AccountNotBannedException {
         Ban ban = findByName(name);
         bans.remove(ban);
-        exportDefaultFile();
     }
 
     @Override
     public void rename(String alt, String name) throws AccountNotBannedException {
         Ban ban = findByName(alt);
         ban.rename(name);
-        exportDefaultFile();
     }
 
     @Override
